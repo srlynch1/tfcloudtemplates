@@ -19,7 +19,7 @@ data "vmc_customer_subnets" "my_subnets" {
 resource "vmc_sddc" "sddc_1" {
   sddc_name           = "my_SDDC_1"
   vpc_cidr            = var.sddc_mgmt_subnet
-  num_host            = 3
+  num_host            = 1
   provider_type       = "ZEROCLOUD"
 # ZEROCLOUD is an API simulator we use internally - we can deploy fake SDDCs using the actual APIs instead of deploying on actual AWS hardware. Customers would use "AWS" as the provider_type instead. 
   region              = data.vmc_customer_subnets.my_subnets.region
