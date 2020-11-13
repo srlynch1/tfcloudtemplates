@@ -1,6 +1,7 @@
 ### Config for vRA Provider -  Auth/Cloud Accounts
 variable "url" {
 }
+
 variable "refresh_token" {
 }
 
@@ -12,7 +13,6 @@ variable "zones" {
 
 
 variable "project_name" {
-
 }
 
 variable "project_desc" {
