@@ -4,7 +4,6 @@ variable "azs" {
 
 }
 
-
 variable "name" {
   type    = string
   default = "test vpc"
