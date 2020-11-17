@@ -9,3 +9,9 @@ variable "name" {
   default = "test vpc"
 
 }
+
+
+variable "region" {
+  type    = string
+  default = "ap-southeast-2"
+}
