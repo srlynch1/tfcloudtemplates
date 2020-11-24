@@ -4,11 +4,11 @@ module "vpc" {
 
   name = var.name
 
-  cidr = "5.0.0.0/16"
+  cidr = var.cidr
 
   azs             = var.azs
-  private_subnets = ["5.0.1.0/24", "5.0.2.0/24", "5.0.3.0/24"]
-  public_subnets  = ["5.0.101.0/24", "5.0.102.0/24", "5.0.103.0/24"]
+  private_subnets = var.private_subnets
+  public_subnets  = var.public_subnets
 
   enable_ipv6 = true
 
