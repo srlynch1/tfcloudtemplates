@@ -1,6 +1,3 @@
-provider "aws" {
-  region = "eu-west-1"
-}
 
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
