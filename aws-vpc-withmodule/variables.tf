@@ -24,3 +24,4 @@ variable "public_subnets" {
   type    = list(string)
   default = ["5.0.101.0/24", "5.0.102.0/24", "5.0.103.0/24"]
 }
+
