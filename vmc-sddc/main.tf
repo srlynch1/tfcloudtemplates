@@ -1,8 +1,4 @@
-provider "vmc" {
-  refresh_token = var.vmc_token
-  org_id        = var.org_id
-}
- 
+
 # Empty data source defined in order to store the org display name and name in terraform state
 data "vmc_org" "my_org" {
 }
