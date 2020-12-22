@@ -1,8 +1,5 @@
 #### VRA Provider - API and Token
-provider "vra" {
-  url           = var.url
-  refresh_token = var.refresh_token
-}
+
 
 #lookup each Cloud zone by name 
 data "vra_zone" "this" {
