@@ -10,9 +10,8 @@ variable "refresh_token" {
 
 variable "zones" {
   type    = list(string)
-  default = ["us-west-1a"]
+  default = ["ANZ AWS APSE2", "ANZ Azure AustraliaEast", "SDDC ANZ vSphere / CM Lab"]
 }
-
 
 variable "project_name" {
 }
@@ -21,6 +20,7 @@ variable "project_desc" {
 }
 
 variable "project_admins" {
+  default = "slynch@vmware.com"
 }
 
 variable "project_members" {
