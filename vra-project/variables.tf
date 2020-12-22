@@ -21,10 +21,13 @@ variable "project_desc" {
 }
 
 variable "project_admins" {
-  default = "slynch@vmware.com"
+  type    = list(string)
+  default = ["slynch@vmware.com"]
 }
 
 variable "project_members" {
+  type    = list(string)
+  default = []
 }
 
 
