@@ -1,14 +1,11 @@
 variable "vmc_token" {
   description = "API token used to authenticate when calling the VMware Cloud Services API."
-  sensitive = true
 }
 variable "org_id" {
   description = "Organization Identifier."
-  sensitive = true
 }
 variable "aws_account_number" {
   description = "The AWS account number."
-  sensitive = true
 }
 variable "sddc_name" {
   description = "Name of SDDC."
