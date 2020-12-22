@@ -13,7 +13,7 @@ data "vmc_customer_subnets" "my_subnets" {
 }
  
 resource "vmc_sddc" "sddc_1" {
-  sddc_name           = "my_SDDC_1"
+  sddc_name           = var.sddc_name
   vpc_cidr            = var.sddc_mgmt_subnet
   num_host            = 1
   provider_type       = "ZEROCLOUD"
