@@ -1,8 +1,10 @@
 ### Config for vRA Provider -  Auth/Cloud Accounts
 variable "url" {
+  default = "api.mgmt.cloud.vmware.com"
 }
 
 variable "refresh_token" {
+  sensitive = true
 }
 
 
